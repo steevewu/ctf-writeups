@@ -20,6 +20,7 @@ $$
 x^3 - m_2*x^2 + m_3*x - m_1 = 0
 $$
 
+$x_1, x_2, x_3$ are our $flag$'s segments.
 
 ## Flag
 ```

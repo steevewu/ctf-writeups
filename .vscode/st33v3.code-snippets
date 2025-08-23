@@ -1,0 +1,10 @@
+{
+	"0x01": {
+	"prefix": "pwn",
+	"body": [
+		"from pwn import *",
+		"context.log_level = 'debug'"
+	],
+	"description": "0x01"
+	}
+}

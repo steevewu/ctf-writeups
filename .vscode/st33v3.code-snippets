@@ -1,10 +1,43 @@
 {
 	"0x01": {
-	"prefix": "pwn",
+	"prefix": "import",
 	"body": [
-		"from pwn import *",
-		"context.log_level = 'debug'"
+		"from pwn import remote, process, context",
+		"context.log_level = 'debug'",
+		"from sage.all import *",
+		"from Crypto.Util.number import long_to_bytes as ltb, bytes_to_long as btl",
+		"import os, random"
 	],
 	"description": "0x01"
+	},
+	"0x02": {
+	"prefix": "process",
+	"body": [
+		"dir = os.path.dirname(__file__)",
+		"io = process(['python3', dir + '/chall.py'])",
+		"$1"
+	],
+	"description": "0x02"
+	},
+	"0x03": {
+	"prefix": "remote",
+	"body": [
+		"io = remote('$1', $2)",
+		"$3"
+	],
+	"description": "0x03"
+	},
+	"0x04": {
+	"prefix": "solution",
+	"body": [
+		"## Solution",
+		"$1",
+		"",
+		"## Flag",
+		"```",
+		"",
+		"```"
+	],
+	"description": "0x04"
 	}
 }

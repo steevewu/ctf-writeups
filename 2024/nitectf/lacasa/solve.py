@@ -8,7 +8,6 @@ dir = os.path.dirname(__file__)
 io = process(['python3', dir + '/chall.py'])
 
 
-
 io.sendlineafter(b"option: ", b"1")
 io.sendlineafter(b"message: ", b"Bob33")
 hash = io.recvline().decode().strip().split(": ")[1]

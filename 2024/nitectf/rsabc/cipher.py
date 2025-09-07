@@ -1,5 +1,6 @@
 import sympy as sp
 from Crypto.Util.number import *
+
 language = {
     'A': 'Α', 'a': 'α',
     'B': 'Β', 'b': 'β',

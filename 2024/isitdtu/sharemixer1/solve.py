@@ -48,7 +48,7 @@ for com in tqdm.tqdm(combs):
     A = Matrix(F, mat)
     X = ~A * B
     for f in X:
-        if re.match(b'c4ts{.*}', ltb(int(f))):
+        if re.match(b'ISITDTU{.*}', ltb(int(f))):
             print(ltb(int(f)))
             exit()
 

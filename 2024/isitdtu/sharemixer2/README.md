@@ -15,35 +15,10 @@ $$
 
 Assume that $flag$, after shuffling, be the first entry of our coefficient vector. The challenge can be written as follow:
 
-$$
-\begin{pmatrix}
-1 & 1 & 1 & ... & 1 \\
-1 & g_1 & g_1^2 & ... & g_1^{31} \\
-1 & g_2 & g_2^2 & ... & g_2^{31} \\
-... \\
-1 & g_{31} & g_{31}^2 & ... & g_{31}^{31}
-\end{pmatrix}
 
-\times
-
-\begin{pmatrix}
-flag \\
-c_1 \\
-c_2 \\
-... \\
-c_{31}
-\end{pmatrix}
-
-=
-
-\begin{pmatrix}
-flag + \sum_{i=1}^{31}c_i \\
-flag + \sum_{i=1}^{31}g_1^ic_i \\
-flag + \sum_{i=1}^{31}g_2^ic_i \\
-... \\
-flag + \sum_{i=1}^{31}g_{31}^ic_i
-\end{pmatrix}
-$$
+<div align='center'>
+<img src="https://64.media.tumblr.com/c7a3ad9b1b133497e7a080804bed4ae5/468f8f5dfb118ee6-80/s1280x1920/ca91f191519c43f6261d61d13fcbe2b7a6e64d75.pnj" alt="lagrida-latex-editor" border="0">
+</div>
 
 By computing the summation of result vector, we have,
 

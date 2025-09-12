@@ -43,6 +43,7 @@ then, we can easily obtain that
 $$
 sig^e - padding = k*n + h
 $$
+
 This fact leads to a solvable problem, i.e the [approximate common divisor](https://martinralbrecht.wordpress.com/2020/03/21/the-approximate-gcd-problem/) which is distinguished as:
 
 $$

@@ -3,7 +3,7 @@ The construction formula of $n$ can be written as $n = p * q * (p + 1) * (p - 1)
 The following image is an illustration:
 
 <div align="center">
-<img src="https://i.ibb.co/xSy9kgLV/034dde5295a41dfa44b5.jpg" width="480">
+<img src='https://64.media.tumblr.com/a551b8ba8a01d509627957e1c3a4ca84/fb3ee2941e0bce51-a2/s1280x1920/038a77694f48d86f8985daf1212e60c975bb5225.pnj' width=720>
 </div>
 
 Next step, cuz $e$ is randomly pick in range $[p*q, (p*q)^2]$, we need to gacha til $e$ is coprime with $p - 1$, in order to make [Euler's theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem) make sense. By now, we just need to find actual remainders of $x \mod{p}$ by using RSA decryption formula:

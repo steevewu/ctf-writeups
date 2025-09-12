@@ -39,5 +39,12 @@
 		"```"
 	],
 	"description": "0x04"
+	},
+	"0x05": {
+	"prefix": "path",
+	"body": [
+		"sys.path.append(os.path.dirname(__file__))"
+	],
+	"description": "0x05"
 	}
 }

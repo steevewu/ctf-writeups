@@ -7,6 +7,7 @@ RSA Signature Schemes (PKCS#1 v1.5, ANSI X9.31, ISO 9796)](https://www.cryptrec.
 $$
 00 || 01 || PS || 00 || HID || h
 $$
+
 where:
 1. $h$: hash digest of original message $m$.
 2. $HID$: hash identifier of hash algorithm (the HID can be [found here](https://www.ibm.com/docs/en/zos/3.1.0?topic=cryptography-pkcs-1-formats)).
@@ -17,6 +18,7 @@ As for each message, only $h$ is variant, then $M$ can be written as follow:
 $$
 M = (01||PS||00||HID) * 2^{q} + h = padding + h
 $$
+
 where $q$ is bit-length of $h$.     
 $M$ is then encrypted using private key $(d, n)$, as follow:
 

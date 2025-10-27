@@ -1,10 +1,11 @@
 ## Solution
 Since server accepts only $k-1$ queires, we cannot directly reconstruct the [Lagrange polynomial](https://en.wikipedia.org/wiki/Lagrange_polynomial) to recover flag.   
 
-However, we can leverage the fact that,
+However, we can leverage the fact that,     
 $$
 \frac{f(x) + f(-x)}{2} = \sum_{i=0, \ even}^{14}c_ix^i = \alpha
 $$
+
 
 similarly, we can easily obtain the odd part by,
 
